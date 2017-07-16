@@ -1,0 +1,53 @@
+.container-fluid{
+}
+.row{
+    background-color: lightgray;
+    height: 1000px;
+}
+.col-lg-3{
+    border-right:1px solid white;
+    height: 1000px;
+}
+.col-lg-5{
+    border-right:1px solid white;
+
+}
+.col-lg-5 .btn {
+    width: 200px;
+    margin: 5px 65px 20px 65px;
+}
+.col-lg-5 .preview{
+    background-color: white;
+    height: 900px;
+}
+.col-lg-4{
+    height: 1000px;
+}
+.col-lg-4 .btn{
+    margin: 2px 0 0 20px;
+    float: left;
+}
+.col-lg-3 .btn-block{
+    width: 90%;
+    margin-left: 8%;
+}
+.col-lg-4 hr{
+    margin: 60px 0 0 0;
+    border: 0.2px solid lightgray;
+}
+.panel .btn{
+    float: left;
+}
+
+.col-lg-4 #editor{
+    margin-top: 20px;
+    height: 880px;
+    background-color: white;
+}
+.btn-group{
+    left: -230px;
+}
+.panel .panel-body{
+    padding: 0;
+    margin: -20px 0 0 0;
+}
