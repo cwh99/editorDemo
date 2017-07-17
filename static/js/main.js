@@ -34,13 +34,6 @@ require.config({
     }
 })
 require(["jquery","underscore","backbone","bootstrap","bootbox","store"],function(){
-    console.log("ss")
 
-    console.log("ww")
-    var model = new Backbone.Model();
-
-    model.set("name","hello");
-
-    model.get("name");
 });
 

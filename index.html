@@ -18,30 +18,46 @@
     <script type="text/javascript" src="static/simditor/scripts/uploader.js"></script>
     <script type="text/javascript" src="static/simditor/scripts/simditor.js"></script>
 
-    
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/bootbox.js"></script>
+    <script src="static/js/underscore.js"></script>
+    <script src="static/js/store.js"></script>
+    <script src="static/js/backbone.js"></script>
+    <script src="static/js/a.js"></script>
+
+    <style type="text/css">
+
+        .appendImage{
+
+            background:url(static/img/test1.jpg) no-repeat center;
+
+        }
+
+    </style>
 
 </head>
 
 <body>
-<div class="container-fluid">
-    <div class="row" id="leftNav">
-        <div class="col-lg-3">
+<div  id="body" class="container-fluid">
+    <div class="row">
+        <div  id="leftNav" class="col-lg-3">
             <button id="imgclick" type="button" class="btn btn-primary btn-md btn-block">图片</button>
             <button id="txtclick" type="button" class="btn btn-primary btn-md btn-block">文字</button>
-            <!--<ul class="txt">-->
-                <!--<li class="items">aaaa</li>-->
-                <!--<li class="items">aaaa</li>-->
-                <!--<li class="items">aaaa</li>-->
-                <!--<li class="items">aaaa</li>-->
-                <!--<li class="items">aaaa</li>-->
-                <!--<li class="items">aaaa</li>-->
-            <!--</ul>-->
+            <ul class="txt" id="leftNavUl">
+                <li id="leftNavli" class="items">aaaa</li>
+                <li class="items">aaaa</li>
+                <li class="items">aaaa</li>
+                <li class="items">aaaa</li>
+                <li class="items">aaaa</li>
+                <li class="items">aaaa</li>
+            </ul>
         </div>
         <div id="main-Context" class="col-lg-5">
             <button type="button" class="btn btn-primary">保存</button>
             <button type="button" class="btn btn-primary">预览</button>
             <div class="preview">
-                <ul id="main-Panel">
+                <ul id="main-Panel" >
                     <p id="c"></p>
                 </ul>
             </div>
@@ -76,8 +92,8 @@
 
 
 </script>
-<script src="static/js/store.js" type="text/javascript" charset="utf-8"></script>
-<script src="static/js/require.js" type="text/javascript" data-main="static/js/build.js" charset="utf-8"></script>
-<script src="static/js/a.js"></script>
+<!--<script src="static/js/store.js" type="text/javascript" charset="utf-8"></script>-->
+<!--<script src="static/js/require.js" type="text/javascript" data-main="static/js/build.js" charset="utf-8"></script>-->
+<!--<script src="static/js/a.js"></script>-->
 </body>
 </html>
