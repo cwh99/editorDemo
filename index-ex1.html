@@ -1,0 +1,86 @@
+<!--事件委托-->
+
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">-->
+<!--<html>-->
+<!--<head>-->
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+    <!--<title>Insert title here</title>-->
+    <!--<script>-->
+        <!--window.onload = function () {-->
+            <!--var ul = document.querySelector('ul');-->
+            <!--ul.addEventListener('click',function (e) {-->
+                <!--var el = e.target;-->
+                <!--while(el.tagName !== 'LI'){-->
+                    <!--el = el.parentNode;-->
+                    <!--if(el === ul){-->
+                        <!--el = null;-->
+                        <!--break;-->
+                    <!--}-->
+                <!--}-->
+                <!--if(el){-->
+                    <!--alert(1)-->
+                <!--}else{-->
+                    <!--alert(2)-->
+                <!--}-->
+            <!--})-->
+            <!---->
+        <!--}-->
+    <!--</script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<ul>-->
+    <!--<li><span>选项1</span></li>-->
+    <!--<p><span>这行是p</span></p>-->
+    <!--<li>选项2</li>-->
+    <!--<li>选项3</li>-->
+    <!--<li>选项4</li>-->
+<!--</ul>-->
+<!--<td class="firstLevelMenuClass" id="firstLevelMenu0"  onclick="onFirstMenuChangeBg(this);" >-->
+    <!--<a href='#'>测试0</a>-->
+<!--</td>-->
+<!--<td class="firstLevelMenuClass" id="firstLevelMenu1"  onclick="onFirstMenuChangeBg(this);" >-->
+    <!--<a href='#'>测试1</a>-->
+<!--</td>-->
+
+<!--<td class="firstLevelMenuClass" id="firstLevelMenu2"  onclick="onFirstMenuChangeBg(this);" >-->
+    <!--<a href='#'>测试2</a>-->
+<!--</td>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html>
+ <head>
+     <style>
+      .box {width:140px; height:140px; margin: auto; background-color:black;
+                    color: white; font: 12px/1.5 Tahoma; padding: 20px}
+     .box:hover {background-color: red; color: green}
+    </style>
+
+     <script>
+    window.onload = function() {
+             var oBox = document.getElementById("box");
+             oBox.onmouseover = function() {
+                     oBox.className = "hover";
+                };
+            oBox.onmouseout = function() {
+                    oBox.className = "";
+                };
+          };
+     </script>
+     </head> www.2cto.com
+  <body>
+  <div class="box">
+      鼠标移入改变样式，鼠标移出恢复。
+     </div>
+  <div class="box">
+      鼠标移入改变样式，鼠标移出恢复。
+  </div>
+  <div class="box">
+      鼠标移入改变样式，鼠标移出恢复。
+  </div>
+  <div class="box">
+      鼠标移入改变样式，鼠标移出恢复。
+  </div>
+  </body>
+  </html>

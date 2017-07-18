@@ -24,7 +24,7 @@
     <script src="static/js/underscore.js"></script>
     <script src="static/js/store.js"></script>
     <script src="static/js/backbone.js"></script>
-    <script src="static/js/a.js"></script>
+    <!--<script src="static/js/a.js"></script>-->
 
     <style type="text/css">
 
@@ -35,7 +35,6 @@
         }
 
     </style>
-
 </head>
 
 <body>
@@ -45,7 +44,7 @@
             <button id="imgclick" type="button" class="btn btn-primary btn-md btn-block">图片</button>
             <button id="txtclick" type="button" class="btn btn-primary btn-md btn-block">文字</button>
             <ul class="txt" id="leftNavUl">
-                <li id="leftNavli" class="items">aaaa</li>
+                <li class="items">aaaa</li>
                 <li class="items">aaaa</li>
                 <li class="items">aaaa</li>
                 <li class="items">aaaa</li>
@@ -54,16 +53,19 @@
             </ul>
         </div>
         <div id="main-Context" class="col-lg-5">
-            <button type="button" class="btn btn-primary">保存</button>
-            <button type="button" class="btn btn-primary">预览</button>
-            <div class="preview">
-                <ul id="main-Panel" >
-                    <p id="c"></p>
+            <button id="save" type="button" class="btn btn-primary">保存</button>
+            <button id="preview" type="button" class="btn btn-primary">预览</button>
+            <div id="main-Panel" class="preview checked">
+                <ul id="main-Panel1">
+                    <img id="editorImg" src="static/img/test1.jpg" alt="">
+
                 </ul>
             </div>
         </div>
         <div class="col-lg-4">
-            <button type="button" class="btn btn-primary">基本属性</button>
+            <button id="del" class="btn btn-primary">删除元素</button>
+            <button id="imgChange" type="button" class="btn btn-primary">图片切换</button>
+            <button id="clearAll" type="button" class="btn btn-primary">清空</button>
             <hr>
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -94,6 +96,6 @@
 </script>
 <!--<script src="static/js/store.js" type="text/javascript" charset="utf-8"></script>-->
 <!--<script src="static/js/require.js" type="text/javascript" data-main="static/js/build.js" charset="utf-8"></script>-->
-<!--<script src="static/js/a.js"></script>-->
+<script src="static/js/a.js"></script>
 </body>
 </html>

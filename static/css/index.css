@@ -6,11 +6,11 @@ ul,li{
 }
 .row{
     background-color: lightgray;
-    height: 1000px;
+    height: 3000px;
 }
 .col-lg-3{
     border-right:1px solid white;
-    height: 1000px;
+    height: 3000px;
 }
 .col-lg-5{
     border-right:1px solid white;
@@ -22,10 +22,10 @@ ul,li{
 }
 .col-lg-5 .preview{
     background-color: white;
-    height: 900px;
+    height: 2000px;
 }
 .col-lg-4{
-    height: 1000px;
+    height: 3000px;
 }
 .col-lg-4 .btn{
     margin: 2px 0 0 20px;
@@ -45,11 +45,10 @@ ul,li{
 
 .col-lg-4 #editor{
     margin-top: 20px;
-    height: 880px;
+    height: 2000px;
     background-color: white;
 }
 .btn-group{
-    /*left: -230px;*/
 }
 .panel .panel-body{
     padding: 0;
@@ -62,4 +61,34 @@ ul,li{
     text-align: center;
     line-height: 50px;
     border: 1px solid lightgray;
+}
+#menu-panel .item{
+    background-color: #1c94c4;
+    border: 1px solid blueviolet;
+}
+.box {
+    width: 50%;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    box-sizing: border-box;
+    background-color: #4f9fcf;
+}
+
+.box:hover{
+    border: 2px solid red;
+}
+.boxImg{
+    margin: 5px auto;
+    left: 200px;
+}
+.boxImg:hover{
+    border: 2px solid red;
+}
+
+
+.chooseItemChecked{
+    border: 2px solid red;
 }

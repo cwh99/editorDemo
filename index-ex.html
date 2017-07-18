@@ -1,39 +1,59 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="static/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="static/css/index.css" rel="stylesheet" type="text/css">
-    <link href="static/css/froala_editor.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+    <meta charset="gb2312">
+    <title>HTML5Ã¿ÈÕÒ»Á·Ö®JS API-±¾µØ´æ´¢LocalStorage | Ç°¶Ë¿ª·¢Íø(W3Cfuns.com)£¡</title>
+    <script type="text/javascript">
+        window.onload = function () {
+//            alert("µ±Äã¹Ø±Õ´ËÒ³Ãæ»òÕß¹Ø±Õä¯ÀÀÆ÷µÄÊ±ºò£¬localStorageÖÐ±£´æµÄÊý¾Ý²Å»áÏûÊ§£¬Ò²¾ÍÊÇËµÖØÐÂ´ò¿ª´ËÒ³ÃæµÄÊ±ºò£¬µã»÷»ñÈ¡Êý¾Ý£¬¿ÉÒÔÈ¡µ½Êý¾Ý¡£")
 
-    <!--å¯Œæ–‡æœ¬æ’ä»¶-->
-    <link rel="stylesheet" type="text/css" href="static/simditor/styles/simditor.css" />
+            //Ê×ÏÈ»ñµÃbodyÖÐµÄ3¸öinputÔªËØ
+            var msg = document.getElementById("msg");
+            var getData = document.getElementById("getData");
+            var setData = document.getElementById("setData");
 
-    <script type="text/javascript" src="static/simditor/scripts/jquery.min.js"></script>
-    <script type="text/javascript" src="static/simditor/scripts/module.js"></script>
-    <script type="text/javascript" src="static/simditor/scripts/hotkeys.js"></script>
-    <script type="text/javascript" src="static/simditor/scripts/uploader.js"></script>
-    <script type="text/javascript" src="static/simditor/scripts/simditor.js"></script>
+            setData.onclick = function ()//´æÈëÊý¾Ý
+            {
+                if (msg.value) {
+                    localStorage.setItem("data", msg.value);
+//                    alert("ÐÅÏ¢ÒÑ±£´æµ½data×Ö¶ÎÖÐ");
+                }
+                else {
+//                    alert("ÐÅÏ¢²»ÄÜÎª¿Õ");
+                }
+            }
 
-    <script src="static/js/jquery-3.2.1.min.js"></script>
-    <script src="static/js/bootstrap.js"></script>
-    <script src="static/js/bootbox.js"></script>
-    <script src="static/js/underscore.js"></script>
-    <script src="static/js/store.js"></script>
-    <script src="static/js/backbone.js"></script>
-    <script src="static/js/a.js"></script>
+            getData.onclick = function ()//»ñÈ¡Êý¾Ý
+            {
+                var msg = localStorage.getItem("data");
+                if (msg) {
+//                    alert("data×Ö¶ÎÖÐµÄÖµÎª£º" + msg);
+                }
+                else {
+//                    alert("data×Ö¶ÎÎÞÖµ£¡");
+                }
+            }
+            var oImg = document.querySelector('img');
+            var oBtn = document.getElementById('getPicture');
+
+            oImg.addEventListener('click',function () {
+                oImg.style("border: 1px solid red");
+                oBtn.onclick = function () {
+                    oImg.src = 'static/img/test2.gif';
+                }
+            });
+
+        }
+    </script>
 </head>
+
 <body>
-<div id="body">
-</div>
-<script type="text/template" id="hello-template">
-    <div>
-        <h3 id="hello">${message}</h3>
-        <button id="toggle">Toggle</button>
-    </div>
-</script>
+<ul>
+    <li><img src="static/img/test1.jpg"></li>
+</ul>
+<input id="msg" type="text"/>
+<input id="setData" type="button" value="±£´æÊý¾Ý"/>
+<input id="getData" type="button" value="»ñÈ¡Êý¾Ý"/>
+<input id="getPicture" type="button" value="ÏÂÒ»Ò³"/>
 </body>
 </html>
